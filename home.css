@@ -33,7 +33,8 @@ header img{
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    margin-right: 9px;
+
+
   }
   
   .menu-button {
@@ -103,6 +104,7 @@ header img{
   }
   .menuBlock{
     margin-top: 10px;
+    margin-right: 15px;
   }
   .earth {
     width: 45%;
@@ -133,7 +135,7 @@ header img{
   }
   main{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 100vh;
     align-items: center;
     
@@ -145,8 +147,10 @@ header img{
   .text {
     width: 55%;
     height: 60vh;
-    margin-left: 10px;
-    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
     font-family: satoshi, "Teko", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
     
   }
@@ -158,9 +162,11 @@ header img{
     font-weight: bold;
     font-family:BlenderPro ;
   }
+  
   .text p,h3{
     color:white;
     margin-left: 30px;
+    
   }
   .text p{
     line-height: 1.7;
@@ -168,7 +174,6 @@ header img{
     margin-top: 20px;
     text-align: justify;
     width: 90%;
-    
     
   }
   
@@ -365,9 +370,13 @@ header img{
         font-weight: bold;
         font-family:BlenderPro ;
       }
+      .text h1 img{
+        width: 70px;
+      }
+
       .text p{
         color:white;
-        margin-left: 30px;
+       
         font-size: 1.3rem;
         
       }
@@ -379,17 +388,17 @@ header img{
       .earth{
         display: none;
       }
-      .menu-button-container{
-        margin-right: 20px;
-      }
+
       main{
         justify-content: center;
+        align-items: center;
       }
       .text{
         width: 80%;
         text-align: center;
-        
-        margin-left: 0;
+        align-items: center;
+        justify-content: center;
+      
         
       }
       .text h1{
@@ -398,12 +407,12 @@ header img{
       }
       .text h3{
         font-size: 2.7rem;
-        margin-left: none;
+        margin-left: 0;
       }
       .text p{
         font-size: 1.4rem;
         text-align: center;
-        margin-left: none;
+        margin-left: 0;
       }
     }
     @media (max-width:754px) {
@@ -448,7 +457,7 @@ header img{
     @media (max-width:406px) {
       .text h1{
         margin-top: 20px;
-        margin-left: 10px;
+       
       }
       .text h1 img{
         display: block;
