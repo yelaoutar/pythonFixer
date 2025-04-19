@@ -1,0 +1,470 @@
+@font-face {
+  font-family: satoshi;
+  src: url(fonts/Satoshi-Variable.ttf);
+}
+@font-face {
+  font-family:"Noto Sans JP" ;
+  src: url(fonts/NotoSansJP-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: BlenderPro;
+  src: url(fonts/Blender\ Pro\ Bold.ttf);
+}
+@font-face {
+  font-family: Refinery-25;
+  src: url(fonts/Refinery-25-Bold.ttf);
+}
+@font-face {
+  font-family: Oswald;
+  src: url(fonts/Oswald-VariableFont_wght.ttf);
+}
+body{
+    background-color: black;
+    background-image:url(img/bg.png) ;
+   
+    
+}
+header img{
+    width: 100px;
+    background-color: aliceblue;
+}
+.menu-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 9px;
+  }
+  
+  .menu-button {
+    width: 48px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    transition: all 0.3s ease;
+  }
+  
+  .menu-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .menu-button:active {
+    transform: scale(0.95);
+  }
+  
+  .menu-button-container.open .menu-button {
+    transform: rotate(90deg);
+  }
+  
+  .hamburger-line {
+    width: 32px;
+    height: 2px;
+    background-color:#2d9ee0;
+    border-radius: 10px;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-button-container.open .line-1 {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+  
+  .menu-button-container.open .line-2 {
+    opacity: 0;
+  }
+  
+  .menu-button-container.open .line-3 {
+    transform: rotate(-45deg) translate(5px, -6.7px);
+  }
+  
+  .menu-text {
+    color: #1EAEDB;
+    font-family:YakuHanJP, "Teko", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+
+    font-weight: bolder;
+    font-size: 14px;
+    margin-top: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-button-container:hover .menu-text {
+    opacity: 0.8;
+  }
+  nav{
+    
+    width: 6%;
+    position: fixed;
+    right: 0px;
+    z-index: 1;
+    
+  }
+  .menuBlock{
+    margin-top: 10px;
+  }
+  .earth {
+    width: 45%;
+    padding: 2rem;
+    text-align: center;
+    
+  
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .earth-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+
+  .info {
+    margin-top: 2rem;
+    color: #94a3b8;
+  }
+  main{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: center;
+    
+    /* background-image: url(img/bg_deco-02.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: left center; */
+  }
+  .text {
+    width: 55%;
+    height: 60vh;
+    margin-left: 10px;
+    margin-top: 30px;
+    font-family: satoshi, "Teko", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    
+  }
+  .text h1{
+    color: #1EAEDB;
+
+    font-size: 4rem;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-family:BlenderPro ;
+  }
+  .text p,h3{
+    color:white;
+    margin-left: 30px;
+  }
+  .text p{
+    line-height: 1.7;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    text-align: justify;
+    width: 90%;
+    
+    
+  }
+  
+  #about{
+    
+    height: 120vh;
+    background-color: #FCEE0A;
+  }
+  .line_top {
+      background-image: url(img/lineBg.svg);
+      background-position: bottom;
+      background-repeat: repeat-x;
+      background-size: 130%;
+      height: 4vh;
+      width: 100%;      
+    }
+    .ham-lines{
+      background-color: black;
+    }
+    .newMenuText{
+      color: black;
+    }
+    #first_title{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    h4{
+      display: block;
+      margin-block-start: 1.33em;
+      margin-block-end: 1.33em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+      unicode-bidi: isolate;
+      margin-top: 70px;
+      
+    }
+    #first_title h4{
+      border-bottom: 1.3px solid #000;
+      display: inline-block;
+      color: #000;
+      font-family: BlenderPro, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      padding-bottom: 8.5px;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+    
+    }
+    #first_title h4::after{
+      border-top: 1.3px solid #000;
+      bottom: -9px;
+      content: "";
+      height: 17px;
+      right: -20px;
+      position: absolute;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      width: 17px;
+      
+    }
+    h2{
+      display: block;
+      font-size: 1.5em;
+      margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+      unicode-bidi: isolate;
+    }
+    #about h2{
+      color: #000;
+      font-family: Refinery-25, sans-serif;
+      font-size: 96px;
+      font-style: normal;
+      font-weight: 600;
+      margin: 30px 0;
+      position: relative;
+      text-align: center;
+      text-shadow: 1px 1px 0 #1EAEDB, -1px -1px 0 #c362c0;
+      text-transform: uppercase;
+    }
+    #aboutMain{
+      width: 95%;
+      margin:auto ;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      height: 60%;
+      
+      
+    }
+    /* #aboutContext{
+      width: 45%;
+      height: 100%;
+      
+      position: relative;
+    }
+    #aboutContext::before{
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: 0px;
+      width: 100%;
+      height: 8px;
+      background: url(img/frame_about_top.png) center top / contain repeat;
+      
+    }
+    #aboutContext #head{
+      position: relative;
+      box-sizing: border-box;
+      text-align: left;
+      padding: 16px 22px 24px;
+      background: url(img/frame_about_repeat.png) center top;
+      border-left: 1px solid rgb(157, 96, 103);
+      border-right: 1px solid rgb(157, 96, 103);
+    }
+    #aboutContext #head::before{
+      content: "";
+      opacity: 0;
+      position: absolute;
+      top: -5px;
+      left: 0px;
+      width: 100%;
+      height: 162px;
+      background: rgba(0, 0, 0, 0.2)
+
+    }
+    #areaTop p{
+      position: relative;
+      padding-left: 5px;
+      color: rgb(196, 106, 118);
+      font-weight: 500;
+      font-size: 13px;
+      font-family: Oswald, sans-serif;
+      letter-spacing: 0.1em;
+    }
+    #areaTop::before{
+      content: "";
+      position: absolute;
+      bottom: 20px;
+      left: 22px;
+      width: 100%;
+      height: 14px;
+      background: url(img/line_about.png) left top / contain no-repeat;
+      
+    } */
+    #AboutContext{
+      height: 100%;
+      width: 45%;
+      background-color: #000;
+    }
+    .about_description{
+      color: #000;
+      font-size: 22px;
+      font-style: normal;
+      line-height: 130%;
+      max-width: 666px;
+      text-align: center;
+      font-family:BlenderPro;
+      margin: auto;
+      
+      padding: 10px;
+      
+      
+    }
+    @media (max-width:1276px) {
+      .text h1{
+        font-size: 3rem;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-family:BlenderPro ;
+      }
+      .earth{
+        width: 45%
+      }
+    
+    }
+    @media (max-width:1003px) {
+      .text{
+        
+        width: 60%;
+      }
+      .text h1{
+        color: #1EAEDB;
+        font-size: 2.3rem;
+        letter-spacing: 4px;
+        font-weight: bold;
+        font-family:BlenderPro ;
+      }
+      .text p{
+        color:white;
+        margin-left: 30px;
+        font-size: 1.3rem;
+        
+      }
+      .text h3{
+        font-size:1.7rem;
+      }
+    }
+    @media (max-width:926px) {
+      .earth{
+        display: none;
+      }
+      .menu-button-container{
+        margin-right: 20px;
+      }
+      main{
+        justify-content: center;
+      }
+      .text{
+        width: 80%;
+        text-align: center;
+        
+        margin-left: 0;
+        
+      }
+      .text h1{
+        font-size: 3.4rem;
+        
+      }
+      .text h3{
+        font-size: 2.7rem;
+        margin-left: none;
+      }
+      .text p{
+        font-size: 1.4rem;
+        text-align: center;
+        margin-left: none;
+      }
+    }
+    @media (max-width:754px) {
+      .text h1{
+        font-size: 2.5rem;
+        
+      }
+      .text h1 img{
+        width: 70px;
+      }
+      .text h3{
+        font-size: 2.2rem;
+      }
+      .text p{
+        font-size: 1.3rem;
+        text-align: center;
+      }
+      #about h2{
+        font-size: 70px;
+      }
+      .about_description{
+        font-size: 1.2rem;
+      
+      }
+    }
+    @media (max-width:574px) {
+      .text{
+        width: 100%;
+      }
+      .text h1{
+        font-size: 2rem;
+        
+      }
+      .text h3{
+        font-size: 1.7rem;
+      }
+      .text p{
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    }
+    @media (max-width:406px) {
+      .text h1{
+        margin-top: 20px;
+        margin-left: 10px;
+      }
+      .text h1 img{
+        display: block;
+        margin: auto;
+    }
+    .text h1{
+      font-size: 2rem;
+      
+    }
+    .text h3{
+      font-size: 1.3rem;
+    }
+    .text p{
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  }
+    
+
