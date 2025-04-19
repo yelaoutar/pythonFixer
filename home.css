@@ -98,13 +98,15 @@ header img{
     
     width: 6%;
     position: fixed;
-    right: 0px;
+    right: 14px;
     z-index: 1;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .menuBlock{
     margin-top: 10px;
-    margin-right: 15px;
+  
   }
   .earth {
     width: 45%;
@@ -145,12 +147,14 @@ header img{
     background-position: left center; */
   }
   .text {
+    
     width: 55%;
     height: 60vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 25px;
     font-family: satoshi, "Teko", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
     
   }
@@ -398,6 +402,7 @@ header img{
         text-align: center;
         align-items: center;
         justify-content: center;
+        margin-bottom: 40px;
       
         
       }
