@@ -33,6 +33,18 @@
         <p>Embark on a journey where coding meets innovation.
           OlegFix is designed to assist developers of all levels in refining their Python scripts.
           Whether you're a beginner seeking guidance or an experienced coder aiming for perfection.​</p>
+          <a href="#about" class="outlined_button"
+          data-scale="0.9"
+          data-color="#1EAEDB"
+          data-hover-fill="#1EAEDB"
+          data-hover-text="#000">
+         Learn More
+         <canvas id="fancyButton"></canvas>
+       </a>
+       
+        
+
+
        
       </div>
       <div class="earth">
@@ -51,16 +63,22 @@
         <h2>
           ABOUT US
         </h2>
-        <div class="about_description">
-          Welcome to OlegFix, your smart coding companion!
-           Our mission is to help developers and students improve their Python code effortlessly. 
-           With OlegFix, you can paste your script, and our AI-powered tool will instantly correct errors, 
-           suggest improvements, and explain what you can do better.
-         
+        <div id="description">
+          <div class="about_description">
+            Welcome to OlegFix, your smart coding companion!
+             Our mission is to help developers and students improve their Python code effortlessly. 
+             With OlegFix, you can paste your script, and our AI-powered tool will instantly correct errors, 
+             suggest improvements, and explain what you can do better.
+           
+          </div>
+          <div class="about_description">
+            Whether you're debugging a tricky function or polishing your final project,
+            OlegFix is here to make coding smoother, clearer, and more fun.
+          </div>
         </div>
-        <div class="about_description">
-          Whether you're debugging a tricky function or polishing your final project,
-          OlegFix is here to make coding smoother, clearer, and more fun.
+        
+        <div class="about_more">
+
         </div>
         <!-- <div id="aboutMain">
           <div id="AboutContext">
@@ -87,6 +105,10 @@
 
 
       <script>
+
+
+
+
         function toggleMenu() {
           const menuButton = document.querySelector('.menu-button-container');
           menuButton.classList.toggle('open');
@@ -101,6 +123,7 @@
       </script>
       <script src="earth.js"></script>
       <script src="menuBtnColor.js"></script>
+      <script src="button.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const setCanvasDimensions = () => {
       let size;
       if (window.innerWidth < 1000) {
-        size = Math.min(window.innerWidth * 0.5, window.innerHeight * 0.5);
+        size = Math.min(window.innerWidth * 0.55, window.innerHeight * 0.55);
       } else if (window.innerWidth >= 1000 && window.innerWidth < 1120) {
         size = Math.min(window.innerWidth * 0.6, window.innerHeight * 0.6);
       } else {
