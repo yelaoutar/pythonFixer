@@ -25,6 +25,7 @@
 body{
     background-color: black;
     background-image:url(img/bg.png) ;
+    overflow-x: hidden;
    
     
 }
@@ -207,12 +208,14 @@ header img{
   .text .outlined_button:hover{
     color: #000;
     z-index: 3;
+    transition: all 0.5s ease;
   }
   .outlined_button canvas{
     position: absolute;
     left: 5px;
     top: 2px;
     z-index: -1;
+    transition: all 0.5s ease;
   }
   
   #about{
@@ -381,7 +384,7 @@ header img{
     }
     .about_description{
       color: #000;
-      font-size: 24px;
+      font-size: 23px;
       font-style: normal;
       line-height: 130%;
       max-width: 666px;
