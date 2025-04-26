@@ -66,8 +66,8 @@ header img{
   }
   
   .hamburger-line {
-    width: 40px;
-    height: 3px;
+    width: 33px;
+    height: 2px;
     background-color:#2d9ee0;
     border-radius: 10px;
     margin: 3px 0;
@@ -75,7 +75,7 @@ header img{
   }
   
   .menu-button-container.open .line-1 {
-    transform: rotate(45deg) translate(6px, 7px);
+    transform: rotate(45deg) translate(5px, 6px);
   }
   
   .menu-button-container.open .line-2 {
@@ -83,7 +83,7 @@ header img{
   }
   
   .menu-button-container.open .line-3 {
-    transform: rotate(-45deg) translate(5.5px, -6px);
+    transform: rotate(-45deg) translate(5px, -6px);
   }
   
   .menu-text {
@@ -91,7 +91,7 @@ header img{
     font-family:YakuHanJP, "Teko", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
 
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 13px;
     margin-top: 8px;
     transition: all 0.3s ease;
   }
@@ -114,9 +114,9 @@ header img{
       background: linear-gradient(180deg, rgba(0, 0, 0, .65), transparent);
       content: "";
       display: block;
-      height: 112px;
+      height: 117px;
       left: 0;
-      opacity: 0.6;
+      opacity: 0.7;
       pointer-events: none;
       position: absolute;
       top: 0;
@@ -128,7 +128,7 @@ header img{
   .menuBlock{
     margin-top: 15px;
     justify-self: flex-end;  
-    margin-right: 25px;
+    margin-right: 13px;
   }
   .earth {
     width: 45%;
@@ -483,7 +483,8 @@ header img{
         text-align: center;
         align-items: center;
         justify-content: center;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
+        margin-top: 0;
       
         
       }
