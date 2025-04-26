@@ -66,8 +66,8 @@ header img{
   }
   
   .hamburger-line {
-    width: 32px;
-    height: 2px;
+    width: 40px;
+    height: 3px;
     background-color:#2d9ee0;
     border-radius: 10px;
     margin: 3px 0;
@@ -75,7 +75,7 @@ header img{
   }
   
   .menu-button-container.open .line-1 {
-    transform: rotate(45deg) translate(5px, 6px);
+    transform: rotate(45deg) translate(6px, 7px);
   }
   
   .menu-button-container.open .line-2 {
@@ -83,7 +83,7 @@ header img{
   }
   
   .menu-button-container.open .line-3 {
-    transform: rotate(-45deg) translate(5px, -6.7px);
+    transform: rotate(-45deg) translate(5.5px, -6px);
   }
   
   .menu-text {
@@ -91,7 +91,7 @@ header img{
     font-family:YakuHanJP, "Teko", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
 
     font-weight: bolder;
-    font-size: 14px;
+    font-size: 15px;
     margin-top: 8px;
     transition: all 0.3s ease;
   }
@@ -101,17 +101,34 @@ header img{
   }
   nav{
     
-    width: 6%;
+    width: 100%;
     position: fixed;
-    right: 14px;
     z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    
+    
+    
+  }
+  nav::before{
+    
+      background: linear-gradient(180deg, rgba(0, 0, 0, .65), transparent);
+      content: "";
+      display: block;
+      height: 112px;
+      left: 0;
+      opacity: 0.6;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      transition: opacity .2s;
+      width: 100%;
+      will-change: opacity;
+  
   }
   .menuBlock{
-    margin-top: 10px;
-  
+    margin-top: 15px;
+    justify-self: flex-end;  
+    margin-right: 25px;
   }
   .earth {
     width: 45%;
@@ -162,7 +179,7 @@ header img{
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 25px;
+    margin-top: 22px;
   
     font-family: BlenderProLight, "Teko", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
     
@@ -490,10 +507,12 @@ header img{
     @media (max-width:754px) {
       .text h1{
         font-size: 2.5rem;
+        margin-right: 7px;
         
       }
       .text h1 img{
-        width: 70px;
+        width: 50px;
+        
       }
       .text h3{
         font-size: 2.2rem;
@@ -528,7 +547,9 @@ header img{
     }
     @media (max-width:406px) {
       .text h1{
-        margin-top: 20px;
+        margin-top: 15px;
+        margin-right: 0;
+        width: 100%;
        
       }
       .text h1 img{

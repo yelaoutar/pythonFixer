@@ -6,7 +6,7 @@
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    // Function to detect if an element is visible (not hidden by parent display: none)
+ 
     function isElementVisible(el) {
       return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
     }
