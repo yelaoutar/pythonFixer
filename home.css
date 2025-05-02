@@ -441,7 +441,7 @@ header img{
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 600px;
+      min-height: 500px;
       width: 70%;
       margin-top: 40px;
     }
@@ -624,6 +624,13 @@ header img{
     .text p{
       font-size: 1.2rem;
       text-align: center;
+    }
+    .outlined_button_more{
+      font-size: 13px;
+    }
+    .outlined_button_more .fancyButton{
+      left: 60px;
+      top: 9px;
     }
   }
     

@@ -1,3 +1,5 @@
+const buttonFunctions = new Map(); 
+
 const canvases = document.querySelectorAll(".fancyButton");
 
 canvases.forEach((canvas) => {
@@ -11,7 +13,6 @@ canvases.forEach((canvas) => {
     canvas.width = width;
     canvas.height = height;
 
-    // Clear any previous canvas drawings
     ctx.clearRect(0, 0, width, height);
 
     ctx.lineWidth = 2.5 * scale;
@@ -55,10 +56,31 @@ canvases.forEach((canvas) => {
     }
   }
 
-  // Initial draw
   updateButton(canvas, false);
 
-  // Hover events
   parent.addEventListener("mouseenter", () => updateButton(canvas, true));
   parent.addEventListener("mouseleave", () => updateButton(canvas, false));
+
+  buttonFunctions.set(canvas, updateButton);
 });
+
+// Resize 
+function changeSizeBtn() {
+  const links = document.querySelectorAll(".outlined_button_more");
+  links.forEach((link) => {
+    const canvas = link.querySelector("canvas");
+    if (canvas) {
+      const scale = window.innerWidth <= 406 ? "0.5" : "0.9";
+      canvas.setAttribute("data-scale", scale);
+
+      const update = buttonFunctions.get(canvas);
+      if (update) {
+        update(canvas, false); 
+      }
+    }
+  });
+}
+
+changeSizeBtn();
+window.addEventListener("resize", changeSizeBtn);
+
