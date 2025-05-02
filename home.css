@@ -113,7 +113,7 @@ header img{
   }
   nav::before{
     
-      background: linear-gradient(180deg, rgba(0, 0, 0, .65), transparent);
+      /* background: linear-gradient(180deg, rgba(0, 0, 0, .65), transparent); */
       content: "";
       display: block;
       height: 117px;
@@ -126,6 +126,9 @@ header img{
       width: 100%;
       will-change: opacity;
   
+  }
+  .scrolled::before{
+     background: linear-gradient(180deg, rgba(0, 0, 0, .65), transparent);
   }
   .menuBlock{
     margin-top: 15px;
@@ -211,33 +214,43 @@ header img{
     width: 90%;
     
   }
-  .text .outlined_button{
+  .outlined_button{
     align-items: center;
     color: #1EAEDB;
     display: flex;
     font-family: BlenderPro, sans-serif;
     font-size: 22px;
     justify-content: center;
-    min-width: 232px;
+    min-width: 252px;
     padding: 15px 40px 15px 35px;
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
-    margin-left: 29px;
-    /* margin-top: 15px; */
+    margin-left: 9px;
+    cursor: pointer;
     z-index: 2;
+    
   }
-  .text .outlined_button:hover{
+  .outlined_button:hover{
     color: #000;
     z-index: 3;
     transition: all 0.5s ease;
   }
-  .outlined_button canvas{
+  
+  .outlined_button .fancyButton{
     position: absolute;
-    left: 5px;
+    left: 14px;
     top: 2px;
     z-index: -1;
     transition: all 0.5s ease;
+  }
+  .outlined_button_more {
+    margin-left: 0;
+    margin-bottom: 10px;
+    
+  }
+  .outlined_button_more .fancyButton{
+    left: 12px;
   }
   
   #about{
@@ -248,6 +261,7 @@ header img{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 100%;
   }
   .line_top {
       background-image: url(img/newLine.svg);
@@ -307,7 +321,7 @@ header img{
       width: 17px;
       
     }
-    h2{
+    .first_header_about{
       display: block;
       font-size: 1.5em;
       margin-block-start: 0.83em;
@@ -317,7 +331,7 @@ header img{
       font-weight: bold;
       unicode-bidi: isolate;
     }
-    #about h2{
+    #about .first_header_about{
       color: #000;
       font-family: Refinery-25, sans-serif;
       font-size: 96px;
@@ -402,6 +416,7 @@ header img{
     #description{
       display: flex;
       flex-direction: column;
+      
       gap: 20px;
      
     }
@@ -410,10 +425,11 @@ header img{
       font-size: 23px;
       font-style: normal;
       line-height: 130%;
-      max-width: 666px;
+      max-width: 866px;
       text-align: center;
       font-family:BlenderProLight;
       padding: 10px;
+      
       
       
     }
@@ -425,15 +441,40 @@ header img{
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 500px;
+      min-height: 600px;
       width: 70%;
-    
+      margin-top: 40px;
     }
+
     .about_more{
       background-color: #000;
       width: 100%;
-      
       height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content:space-around;
+      
+    }
+    .about_more p{
+      color: white;
+      font-size: 20px;
+
+      
+
+    }
+
+    .header_about{
+      font-family: Refinery-25, sans-serif;
+      font-size: 40px;
+      margin-top: var(--section-title-space);
+      position: relative;
+      color: white;
+      align-self: flex-end;
+      margin-right: 50px;
+      margin-top: 20px;
+      letter-spacing: 1px;
+     
     }
     @media (max-width:1300px) {
       .text h1{
@@ -477,7 +518,6 @@ header img{
       .earth{
         display: none;
       }
-
       main{
         justify-content: center;
         align-items: center;
@@ -527,11 +567,12 @@ header img{
         font-size: 1.3rem;
         text-align: center;
       }
-      #about h2{
+      #about .first_header_about{
         font-size: 70px;
       }
       .about_description{
         font-size: 1.2rem;
+        max-width: 660px;
       
       }
     }
@@ -550,6 +591,17 @@ header img{
         font-size: 1.5rem;
         text-align: center;
       }
+      .about_more p{
+        font-size: 17px;
+      }
+      .aboutMore_con{
+        width: 80%;
+      }
+      .header_about{
+        align-self: center;
+        margin-right: 0;
+      }
+    
     }
     @media (max-width:406px) {
       .text h1{

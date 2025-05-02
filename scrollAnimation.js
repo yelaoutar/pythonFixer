@@ -40,3 +40,14 @@ function ChangeAnimation() {
 }
 ChangeAnimation();
 window.addEventListener('resize', ChangeAnimation);
+
+function changeNavBack() {
+  let nav = document.querySelector("nav");
+  if (window.scrollY > 17) {
+    nav.classList.add("scrolled");
+    console.log("scrolling")
+  } else {
+    nav.classList.remove("scrolled");
+  }
+}
+window.addEventListener("scroll", changeNavBack);
