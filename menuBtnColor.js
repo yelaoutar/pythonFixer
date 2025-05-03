@@ -14,7 +14,7 @@ ScrollTrigger.create({
   }
 });
 ScrollTrigger.create({
-  trigger: ".line_buttom",
+  trigger: "#contact",
   start: "top 40px",
   end:"bottom",
   onEnter: () => {
