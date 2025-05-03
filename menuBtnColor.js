@@ -1,16 +1,31 @@
-const menuBtns = document.querySelectorAll('.hamburger-line');
-const section = document.getElementById('about');
-const menuText = document.querySelector('.menu-text');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      menuBtns.forEach(btn => btn.classList.add('ham-lines'));
-      menuText.classList.add("newMenuText")
-    } else {
-      menuBtns.forEach(btn => btn.classList.remove('ham-lines'));
-      menuText.classList.remove("newMenuText")
-    }
-  });
-}, { threshold: 0.43 });
+gsap.registerPlugin(ScrollTrigger);
 
-observer.observe(section);
+ScrollTrigger.create({
+  trigger: ".line_top",
+  start: "top -10px", 
+  end: "bottom", 
+  onEnter: () => {
+    document.querySelectorAll('.hamburger-line').forEach(btn => btn.classList.add('ham-lines'));
+    document.querySelector('.menu-text').classList.add('newMenuText');
+  },
+  onLeaveBack: () => {
+    document.querySelectorAll('.hamburger-line').forEach(btn => btn.classList.remove('ham-lines'));
+    document.querySelector('.menu-text').classList.remove('newMenuText');
+  }
+});
+ScrollTrigger.create({
+  trigger: ".line_buttom",
+  start: "top 40px",
+  end:"bottom",
+  onEnter: () => {
+    document.querySelectorAll('.hamburger-line').forEach(btn => btn.classList.remove('ham-lines'));
+    document.querySelector('.menu-text').classList.remove('newMenuText');
+  },
+  onLeaveBack: () => {
+    document.querySelectorAll('.hamburger-line').forEach(btn => btn.classList.add('ham-lines'));
+    document.querySelector('.menu-text').classList.add('newMenuText');
+  }
+});
+
+
+

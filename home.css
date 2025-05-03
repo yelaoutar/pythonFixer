@@ -26,7 +26,7 @@
 body{
     background-color: black;
     background-image:url(img/bg.png) ;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
    
     
 }
@@ -106,6 +106,7 @@ header img{
     width: 100%;
     position: fixed;
     z-index: 1;
+  
     
     
     
@@ -128,7 +129,7 @@ header img{
   
   }
   .scrolled::before{
-     background: linear-gradient(180deg, rgba(0, 0, 0, .65), transparent);
+     background: linear-gradient(180deg, rgba(0, 0, 0, .75), transparent);
   }
   .menuBlock{
     margin-top: 15px;
@@ -138,6 +139,7 @@ header img{
   .earth {
     width: 39%;
     padding: 2rem;
+    margin-right: 30px;
     
     
     
@@ -173,6 +175,7 @@ header img{
     gap: 40px;
     
     
+    
     /* background-image: url(img/bg_deco-02.png);
     background-repeat: no-repeat;
     background-size: 500px;
@@ -181,7 +184,7 @@ header img{
 
   .text {
     
-    width: 55%;
+    width: 60%;
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -189,6 +192,7 @@ header img{
     align-items: flex-start;
     margin-top: 22px;
   
+
     font-family: BlenderProLight, "Teko", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
     
   }
@@ -257,19 +261,22 @@ header img{
     
     height: 200vh;
     background-color: #1EAEDB;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     width: 100%;
+    position: relative;
   }
+
   .line_top {
       background-image: url(img/newLine.svg);
       background-position: bottom;
       background-repeat: repeat-x;
       background-size: 130%;
       height: 4vh;
-      width: 100%;      
+      width: 100%;       
     }
     .ham-lines{
       background-color: black;
@@ -435,7 +442,7 @@ header img{
     }
     .aboutMore_con {
       border: 10px solid;
-      border-image-source: url(img/border.svg); 
+      border-image-source: url(img/border.svg);
       border-image-slice: 20; 
       border-image-repeat: stretch;
       display: flex;
@@ -476,6 +483,21 @@ header img{
       letter-spacing: 1px;
      
     }
+    .line_buttom{
+      background-image: url(img/razor-099e4b40.svg);
+      width: 100%;
+      height: 5vh;
+      background-color: black;
+      background-repeat: repeat-x;
+      background-position:right bottom;
+      position: absolute;
+      bottom: 0;
+    }
+    #contact{
+      width: 100%;
+      height: 120vh;
+      background-color: black;
+    }
     @media (max-width:1300px) {
       .text h1{
         font-size: 3rem;
@@ -488,7 +510,7 @@ header img{
       }
     
     }
-    @media (max-width:1050px) {
+    @media (max-width:1056px) {
       .text{
         
         width: 60%;
@@ -533,6 +555,10 @@ header img{
       
         
       }
+      .line_buttom{
+        background-position:1000px bottom;
+
+        }
       .text h1{
         font-size: 3.4rem;
         
@@ -563,6 +589,10 @@ header img{
       .text h3{
         font-size: 2.2rem;
       }
+      .line_buttom{
+        background-position:900px bottom;
+
+        }
       .text p{
         font-size: 1.3rem;
         text-align: center;
@@ -584,6 +614,11 @@ header img{
         font-size: 2rem;
         
       }
+      .line_buttom{
+        background-position:750px bottom;
+
+        }
+
       .text h3{
         font-size: 1.7rem;
       }
@@ -610,6 +645,10 @@ header img{
         width: 100%;
        
       }
+      .line_buttom{
+        background-position:650px bottom;
+
+        }
       .text h1 img{
         display: block;
         margin: auto;
