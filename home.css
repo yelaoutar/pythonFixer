@@ -272,10 +272,10 @@ header img{
 
   .line_top {
       background-image: url(img/newLine.svg);
-      background-position: bottom;
-      background-repeat: repeat-x;
-      background-size: 130%;
-      height: 4vh;
+      background-position: -200px bottom;
+      background-repeat: no-repeat;
+      
+      height: 6vh;
       width: 100%;       
     }
     .ham-lines{
@@ -486,7 +486,7 @@ header img{
     .line_buttom{
       background-image: url(img/razor-099e4b40.svg);
       width: 100%;
-      height: 5vh;
+      height: 7vh;
       background-color: black;
       background-repeat: repeat-x;
       background-position:right bottom;
@@ -559,6 +559,9 @@ header img{
         background-position:1000px bottom;
 
         }
+        .line_top{
+          background-position: -250px bottom;
+        }
       .text h1{
         font-size: 3.4rem;
         
@@ -593,6 +596,9 @@ header img{
         background-position:900px bottom;
 
         }
+        .line_top{
+          background-position: -350px bottom;
+        }
       .text p{
         font-size: 1.3rem;
         text-align: center;
@@ -617,6 +623,9 @@ header img{
       .line_buttom{
         background-position:750px bottom;
 
+        }
+        .line_top{
+          background-position: -400px bottom;
         }
 
       .text h3{
@@ -652,6 +661,9 @@ header img{
       .text h1 img{
         display: block;
         margin: auto;
+    }
+    .line_top{
+      background-position: -420px bottom;
     }
     .text h1{
       font-size: 2rem;
