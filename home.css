@@ -39,6 +39,7 @@ header img{
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+   
 
 
   }
@@ -105,7 +106,10 @@ header img{
     
     width: 100%;
     position: fixed;
+    display: flex;
     z-index: 3;
+    justify-content: flex-end; 
+    align-items: center;
   }
   nav::before{
     
@@ -129,8 +133,10 @@ header img{
   }
   .menuBlock{
     margin-top: 15px;
-    justify-self: flex-end;  
+
     margin-right: 13px;
+   
+ 
   }
   .earth {
     width: 39%;
@@ -480,16 +486,7 @@ header img{
       letter-spacing: 1px;
      
     }
-    /* .line_buttom{
-      background-image: url(img/razor-099e4b40.svg);
-      width: 100%;
-      height: 5vh;
-      background-color: black;
-      background-repeat: repeat-x;
-      background-position:right bottom;
-      position: absolute;
-      bottom: 0;
-    } */
+
     footer{
       width: 100%;
       min-height: 70vh;
@@ -519,12 +516,6 @@ header img{
     transform: rotate(180deg);
    
     }
-    /* .spacing{
-      height:400px;
-      width: 100%;
-      background-color: #c362c0;
-      z-index: 3;
-    } */
     .socials{
      min-height: 100px;
      width: 50%;
@@ -568,7 +559,7 @@ header img{
     color: #00f0ff;
     font-family: BlenderPro, sans-serif;
     font-size: 20px;
-    /* text-align: center; */
+
     text-decoration: none;
     
     }
@@ -579,7 +570,7 @@ header img{
       flex-direction: row;
       margin-left: 70px;
       justify-content: space-evenly;
-      
+      margin-bottom: 40px;
       align-items: center;
     }
     footer .copyright .blocklogo{
