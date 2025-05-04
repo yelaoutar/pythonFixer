@@ -166,7 +166,7 @@ header img{
   main{
     display: flex;
     justify-content: space-around;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
     gap: 40px;
     
@@ -181,7 +181,7 @@ header img{
   .text {
     
     width: 60%;
-    height: 70vh;
+    min-height: 70vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -271,7 +271,7 @@ header img{
       background-position: -200px bottom;
       background-repeat: no-repeat;
       
-      height: 6vh;
+      height: 7vh;
       width: 100%;       
     }
     .ham-lines{
@@ -419,8 +419,9 @@ header img{
     #description{
       display: flex;
       flex-direction: column;
-      
+      min-height: 20%;
       gap: 20px;
+
      
     }
     .about_description{
@@ -452,7 +453,7 @@ header img{
     .about_more{
       background-color: #000;
       width: 100%;
-      height: 100%;
+      min-height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -489,14 +490,24 @@ header img{
       position: absolute;
       bottom: 0;
     } */
-    #contact{
+    footer{
       width: 100%;
-      height: 120vh;
+      min-height: 70vh;
       background-color: rgb(0, 0, 0);
       position: relative;
+      color: #cbcbcb;
+      font-family:BlenderPro ;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font-size: 18px;
+      gap: 20px;
+     
     }
-    #contact::before{
-    background: url(img/razor-bottom-black-4930e500.svg) repeat-x top;
+   
+
+    .line_bottom{
+      background: url(img/razor-bottom-black-4930e500.svg) repeat-x top;
     content: "";
     height: 59px;
     width: 100%;
@@ -507,8 +518,110 @@ header img{
     background-color: #1EAEDB;
     transform: rotate(180deg);
    
+    }
+    /* .spacing{
+      height:400px;
+      width: 100%;
+      background-color: #c362c0;
+      z-index: 3;
+    } */
+    .socials{
+     min-height: 100px;
+     width: 50%;
+     margin-top: 60px;
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 20px;
+    
+    }
+    .socials a{
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: block;
+      height: 40px;
+      margin-left: 12px;
+      width: 40px;
+    }
+    footer hr{
+      background: white;
+      border: none;
+      display: block;
+      height: 2px;
+      margin: 0;
+      width: 95%;
 
     }
+    footer .links{
+
+      width: 70%;
+      display: flex;
+      justify-content: space-evenly;
+      min-height: 50px;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    footer .links a{
+    color: #00f0ff;
+    font-family: BlenderPro, sans-serif;
+    font-size: 20px;
+    /* text-align: center; */
+    text-decoration: none;
+    
+    }
+    footer .copyright{
+      margin-top: 25px;
+      width: 65%;
+      display: flex;
+      flex-direction: row;
+      margin-left: 70px;
+      justify-content: space-evenly;
+      
+      align-items: center;
+    }
+    footer .copyright .blocklogo{
+      width: 20%;
+ 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+    }
+    .blocklogo img{
+      width: 60px;
+      margin-top: 5px;
+    }
+    .blocklogo span{
+      color:#00f0ff;
+      
+     
+    }
+    .copyright .copyrightText{
+      color: #cbcbcb;
+      font-size: 14px;
+      line-height: 18px;
+      max-width: 526px;
+      font-family:BlenderProLight ;
+    }
+ 
+    .socials a.social_facebook{
+      background-image: url(img/facebook-607a7626.svg);
+     
+    }
+    .socials .social_discord{
+      background-image: url(img/discord-25f7b34a.svg);
+    }
+    .socials .social_instagram{
+      background-image: url(img/instagram-d70b2cd7.svg);
+    }
+    .socials .social_twitter{
+      background-image: url(img/twitter-964d7e53.svg);
+    }
+    
     @media (max-width:1300px) {
       .text h1{
         font-size: 3rem;
@@ -546,6 +659,29 @@ header img{
       .text h3{
         font-size:1.7rem;
       }
+      footer .copyright{
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 95%;
+      
+      }
+      footer .copyright .blocklogo{
+        width: 70%;
+        margin-right: 20px;
+      }
+      .blocklogo img{
+        width: 40px;
+        
+    
+      }
+      .copyright .copyrightText{
+        margin-top: 7px;
+        width: 100%;
+       
+      }
     }
     @media (max-width:926px) {
       .earth{
@@ -566,10 +702,7 @@ header img{
       
         
       }
-      .line_buttom{
-        background-position:1000px bottom;
-
-        }
+    
         .line_top{
           background-position: -250px bottom;
         }
@@ -589,6 +722,7 @@ header img{
       .text .outlined_button{
         margin-left: 0;
       }
+     
     }
     @media (max-width:754px) {
       .text h1{
@@ -603,10 +737,7 @@ header img{
       .text h3{
         font-size: 2.2rem;
       }
-      .line_buttom{
-        background-position:900px bottom;
-
-        }
+    
         .line_top{
           background-position: -350px bottom;
         }
@@ -622,6 +753,15 @@ header img{
         max-width: 660px;
       
       }
+      footer .socials span{
+        width: 100%;
+        text-align: center;
+
+        
+      }
+      footer .socials{
+        width: 80%;
+      }
     }
     @media (max-width:574px) {
       .text{
@@ -631,10 +771,7 @@ header img{
         font-size: 2rem;
         
       }
-      .line_buttom{
-        background-position:750px bottom;
-
-        }
+    
         .line_top{
           background-position: -400px bottom;
         }
@@ -665,10 +802,7 @@ header img{
         width: 100%;
        
       }
-      .line_buttom{
-        background-position:650px bottom;
-
-        }
+   
       .text h1 img{
         display: block;
         margin: auto;
