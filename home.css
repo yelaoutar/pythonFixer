@@ -450,10 +450,10 @@ header img{
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 600px;
+      height: 500px;
       width: 70%;
       margin-top: 40px;
-      margin-bottom: 80px;
+      margin-bottom: 140px;
     }
 
     .about_more{
@@ -464,7 +464,6 @@ header img{
       flex-direction: column;
       align-items: center;
       justify-content:space-evenly;
-      
     }
     .about_more p{
       color: white;
@@ -713,6 +712,9 @@ header img{
       }
       .text .outlined_button{
         margin-left: 0;
+      }
+      .aboutMore_con{
+        height: 600px;
       }
      
     }
