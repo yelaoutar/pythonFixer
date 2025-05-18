@@ -13,7 +13,8 @@ function toggleMenu() {
 }
 
 menuButton.addEventListener("click", () => {
-  toggleMenu(); // ✅ You missed this
+ 
+  
 
   const isMenuVisible = menu.style.display === "flex";
 
@@ -33,7 +34,7 @@ menuButton.addEventListener("click", () => {
     imgBlock.classList.remove("aos-animate");
     void imgBlock.offsetWidth;
     imgBlock.classList.add("aos-animate");
-    AOS.refresh();
+   
   }
 });
 
