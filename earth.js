@@ -1,15 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
   const canvas = document.getElementById('earth-canvas');
   if (!canvas) return;
-
   const ctx = canvas.getContext('2d');
   if (!ctx) return;
-
-  // Function to detect if an element is visible (not hidden by parent display: none)
   function isElementVisible(el) {
     return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
-  }
-
+  };
   const setCanvasDimensions = () => {
     let size;
     if (window.innerWidth < 1000) {
@@ -44,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
       isAnimating = false;
       return;
     }
-    // console.log("earth drawing")
+
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = '#0EA5E9';
 
@@ -92,11 +88,10 @@ document.addEventListener('DOMContentLoaded', function () {
     animationFrame = requestAnimationFrame(drawEarth);
   };
 
-  // Initial sizing and drawing
+
   setCanvasDimensions();
   drawEarth();
 
-  // On resize: resize canvas and re-draw only if not animating
   window.addEventListener('resize', () => {
     setCanvasDimensions();
     if (!isAnimating && isElementVisible(canvas)) {
@@ -104,7 +99,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Cleanup on unload
   window.addEventListener('beforeunload', () => {
     window.removeEventListener('resize', setCanvasDimensions);
     cancelAnimationFrame(animationFrame);

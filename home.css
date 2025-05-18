@@ -111,6 +111,104 @@ header img{
     justify-content: flex-end; 
     align-items: center;
   }
+  .hiddenMenu{
+    background-color: rgb(0, 0, 0,1);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    display: none;
+  }
+  .imgBlock
+  {
+    position: relative;
+    
+    width: 44%;
+    height: 100%;
+    background-image: url(img/bg_no.jpg);
+    overflow: hidden;
+    animation: zoomInOut 8s ease-in-out infinite;
+  }
+  @keyframes zoomInOut {
+  0%, 100% {
+    background-size: 50% ;
+  }
+  50% {
+    background-size: 50.5%; 
+  }
+}
+  .imgBlock::before{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: skewY(-68.5deg);
+    transform-origin: right top;
+    z-index: 3;
+    background: #000000;
+    width: 100%;
+    height: 100%;
+    content: "";
+  }.textblock
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+  
+    
+  }
+ .textblock .linkMenu {
+  display: flex;
+  width: 80%;
+  height: 60%; 
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.linkMenu .pos_links{
+  width: 40%;
+ 
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pos_links a {
+  font-family: BlenderProLight;
+  display: block;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  position: relative;
+}
+.icon-container{
+      position: absolute;
+      display: inline-block;
+      left: -40px;
+      bottom: 25px;
+      rotate: 180deg;
+  
+    
+}
+.icon-container svg{
+  width: 11px;
+}
+ .signal {
+      height: 12px;
+      width: 12px;
+      background-color: white;
+      position: absolute;
+      left: -17px;
+      top: 13px;
+      rotate: 180deg;
+   
+      opacity: 1;
+    }
+
+
   nav::before{
     
       /* background: linear-gradient(180deg, rgba(0, 0, 0, .65), transparent); */
@@ -716,6 +814,42 @@ header img{
       .aboutMore_con{
         height: 600px;
       }
+      .textblock{
+        align-items: end;
+      }
+      .hiddenMenu{
+        flex-direction: column-reverse;
+        
+
+     
+      }
+      .imgBlock{
+        width: 100%;
+        height: 60%;
+      }
+      .imgBlock::before{
+        top: 0px;
+        right: auto;
+        bottom: auto;
+        left: 0px;
+        transform: skewX(-75deg);
+        transform-origin: left top;
+        width: 80%;
+      }
+      .linkMenu{
+       
+        height: 90% !important;
+        
+      }
+      .linkMenu .pos_links{
+        width: 100%;
+        justify-content: left;
+        margin-left: 70px;
+
+      }
+      .pos_links a{
+        
+      }
      
     }
     @media (max-width:754px) {
@@ -824,4 +958,3 @@ header img{
     }
   }
     
-

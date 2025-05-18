@@ -4,6 +4,7 @@ ScrollTrigger.create({
   trigger: ".line_top",
   start: "top -10px", 
   end: "bottom", 
+
   onEnter: () => {
     document.querySelectorAll('.hamburger-line').forEach(btn => btn.classList.add('ham-lines'));
     document.querySelector('.menu-text').classList.add('newMenuText');

@@ -11,7 +11,7 @@ const lenis = new Lenis({
   content: document.body,
   smooth: true,
   lerp: 0.1,
-  wheelMultiplier: 0.7,
+  wheelMultiplier: 1,
   infinite: false
 });
 
