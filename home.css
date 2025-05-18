@@ -816,6 +816,9 @@ header img{
       }
       .textblock{
         align-items: end;
+      
+        height: 500px;
+        margin-top: 80px;
       }
       .hiddenMenu{
         flex-direction: column-reverse;
@@ -839,6 +842,7 @@ header img{
       .linkMenu{
        
         height: 90% !important;
+        gap: 10px !important;
         
       }
       .linkMenu .pos_links{
