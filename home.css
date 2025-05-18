@@ -818,7 +818,7 @@ header img{
         align-items: end;
       
         height: 500px;
-        margin-top: 80px;
+        margin-top: 60px;
       }
       .hiddenMenu{
         flex-direction: column-reverse;
